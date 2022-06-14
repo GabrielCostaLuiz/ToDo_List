@@ -111,4 +111,32 @@ export const Container = styled.main`
       display: none;
     }
   }
+
+  @media (max-width: 500px) {
+    max-width: 100%;
+
+    form {
+      input {
+        width: 90%;
+        height: 5.4rem;
+
+        &::placeholder {
+          font-size: 1.1rem;
+        }
+      }
+
+      button {
+        width: fit-content;
+        padding-inline: 2%;
+        height: auto;
+        gap: 0.3rem;
+      }
+    }
+
+    .contentTasks {
+      p {
+        font-size: min(1.3rem, 4vw);
+      }
+    }
+  }
 `;
